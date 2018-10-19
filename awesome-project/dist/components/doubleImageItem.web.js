@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 31);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -19748,51 +19748,19 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _vue = __webpack_require__(5);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-var _weexVueRender = __webpack_require__(8);
-
-var _weexVueRender2 = _interopRequireDefault(_weexVueRender);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_weexVueRender2.default.init(_vue2.default);
-
-var App = __webpack_require__(21);
-new _vue2.default(_vue2.default.util.extend({ el: '#root' }, App));
-
-/***/ }),
-/* 21 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(22)
+  __webpack_require__(11)
 }
 var Component = __webpack_require__(2)(
   /* script */
-  __webpack_require__(24),
+  __webpack_require__(13),
   /* template */
-  __webpack_require__(25),
+  __webpack_require__(14),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -19800,7 +19768,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/biyao.com/Desktop/awesome-project/src/components/doubleImageItem.vue"
+Component.options.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] doubleImageItem.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -19824,13 +19792,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 22 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(23);
+var content = __webpack_require__(12);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -19850,7 +19818,7 @@ if(false) {
 }
 
 /***/ }),
-/* 23 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -19858,13 +19826,13 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-23cab786] {\n flex-flow: column;\n background-color: aqua;\n}\n.title[data-v-23cab786]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: left;\n   align-self: left;\n}\n.subTitle[data-v-23cab786]{\n    font-size: 0.37333rem;\n    color:gray;\n    text-align: left;\n}\n.image[data-v-23cab786]{\n   flex-grow: 1;\n   margin-left: 0px;\n   margin-right: 0px;\n   margin-top: 0.26667rem;\n   margin-bottom: 0px;\n   align-self: left;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-23cab786] {\n  flex-grow: 1;\n  flex: 1;\n flex-flow: column;\n background-color: aqua;\n}\n.images[data-v-23cab786]{\n    flex-grow: 1;\n   flex: 1;\n flex-flow: row;\n}\n.title[data-v-23cab786]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: left;\n   align-self: left;\n}\n.subTitle[data-v-23cab786]{\n    font-size: 0.37333rem;\n    color:gray;\n    text-align: left;\n}\n.image[data-v-23cab786]{\n   flex-grow: 1;\n   flex: 1;\n   margin-left: 0px;\n   margin-right: 0px;\n   margin-top: 0.26667rem;\n   margin-bottom: 0px;\n   align-self: left;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 24 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19907,13 +19875,24 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
   props: ['model']
 };
 
 /***/ }),
-/* 25 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -19932,14 +19911,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "weex-type": "text"
     }
-  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _vm._v(" "), _c('figure', {
+  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _vm._v(" "), _c('div', {
+    staticClass: "images weex-ct weex-div",
+    attrs: {
+      "weex-type": "div"
+    }
+  }, [_c('figure', {
     staticClass: "image weex-el weex-image",
     attrs: {
-      "src": "model.picture",
-      "data-img-src": "model.picture",
+      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg",
+      "data-img-src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg",
       "weex-type": "image"
     }
-  })])
+  }), _vm._v(" "), _c('figure', {
+    staticClass: "image weex-el weex-image",
+    attrs: {
+      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg",
+      "data-img-src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg",
+      "weex-type": "image"
+    }
+  })])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -19948,6 +19939,44 @@ if (false) {
      require("vue-hot-reload-api").rerender("data-v-23cab786", module.exports)
   }
 }
+
+/***/ }),
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _vue = __webpack_require__(5);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _weexVueRender = __webpack_require__(8);
+
+var _weexVueRender2 = _interopRequireDefault(_weexVueRender);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_weexVueRender2.default.init(_vue2.default);
+
+var App = __webpack_require__(10);
+new _vue2.default(_vue2.default.util.extend({ el: '#root' }, App));
 
 /***/ })
 /******/ ]);

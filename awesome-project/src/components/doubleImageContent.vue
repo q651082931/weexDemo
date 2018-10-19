@@ -1,10 +1,12 @@
 <template>
     <list class="list">
-      <cell> 
+      <cell  class="content"> 
+      <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
       <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
       </cell>
-      <cell> 
+      <cell class="content"> 
       <doubleImageItem :model = "secondLists[1]"></doubleImageItem>
+      <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
       </cell>
     </list>
 </template>
@@ -12,8 +14,13 @@
 <style scoped>
 .list{
   background-color:blueviolet;
+  height: 600px;
 }
- 
+.content{
+  flex-direction: row;
+  height: 300px;
+}
+
 </style>
 
 <script>

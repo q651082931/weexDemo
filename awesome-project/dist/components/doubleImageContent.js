@@ -62,29 +62,25 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 21);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(1)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(2)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -96,10 +92,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/singleImageItem.vue"
+__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-3336c274"
+__vue_options__._scopeId = "data-v-419feddd"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -114,23 +110,26 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */
+/* 1 */
 /***/ (function(module, exports) {
 
 module.exports = {
   "content": {
+    "flexGrow": 1,
+    "flex": 1,
     "flexFlow": "column",
-    "backgroundColor": "#00FFFF",
-    "flex": 1
+    "backgroundColor": "#00FFFF"
+  },
+  "images": {
+    "flexGrow": 1,
+    "flex": 1,
+    "flexFlow": "row"
   },
   "title": {
     "fontSize": "40",
     "color": "#000000",
     "textAlign": "left",
-    "alignSelf": "left",
-    "whiteSpace": "nowrap",
-    "textOverflow": "ellipsis",
-    "overflow": "hidden"
+    "alignSelf": "left"
   },
   "subTitle": {
     "fontSize": "28",
@@ -139,6 +138,7 @@ module.exports = {
   },
   "image": {
     "flexGrow": 1,
+    "flex": 1,
     "marginLeft": "0",
     "marginRight": "0",
     "marginTop": "20",
@@ -148,7 +148,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 6 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -157,6 +157,12 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -202,7 +208,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 7 */
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -212,35 +218,44 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["title"]
   }, [_vm._v(_vm._s(_vm.model.title))]), _c('text', {
     staticClass: ["subTitle"]
-  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _c('image', {
+  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _vm._m(0)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["images"]
+  }, [_c('image', {
     staticClass: ["image"],
     attrs: {
-      "src": _vm.model.picture
+      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg"
+    }
+  }), _c('image', {
+    staticClass: ["image"],
+    attrs: {
+      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg"
     }
   })])
-},staticRenderFns: []}
+}]}
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(13)
+__vue_styles__.push(__webpack_require__(9)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(14)
+__vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(15)
+var __vue_template__ = __webpack_require__(11)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -252,10 +267,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/singleImageContent.vue"
+__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-31b80616"
+__vue_options__._scopeId = "data-v-26de68c2"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -270,24 +285,22 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 13 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = {
+  "list": {
+    "backgroundColor": "#8A2BE2",
+    "height": "600"
+  },
   "content": {
-    "backgroundColor": "#FFE4C4"
-  },
-  "singleImageItemLeft": {
-    "marginRight": "20",
-    "flexGrow": 1
-  },
-  "singleImageItemRight": {
-    "flexGrow": 1
+    "flexDirection": "row",
+    "height": "300"
   }
 }
 
 /***/ }),
-/* 14 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -297,18 +310,18 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _singleImageItem = __webpack_require__(4);
+var _doubleImageItem = __webpack_require__(0);
 
-var _singleImageItem2 = _interopRequireDefault(_singleImageItem);
+var _doubleImageItem2 = _interopRequireDefault(_doubleImageItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
   components: {
-    singleImageItem: _singleImageItem2.default
+    doubleImageItem: _doubleImageItem2.default
 
   },
-  props: ['firstLists']
+  props: ['secondLists']
 
 }; //
 //
@@ -331,52 +344,69 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
 
 /***/ }),
-/* 15 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('list', {
+    staticClass: ["list"]
+  }, [_c('cell', {
     staticClass: ["content"],
-    staticStyle: {
-      justifyContent: "space-around",
-      flexDirection: "row"
-    }
-  }, [_c('singleImageItem', {
-    staticClass: ["singleImageItemLeft"],
+    appendAsTree: true,
     attrs: {
-      "model": _vm.firstLists[0]
+      "append": "tree"
     }
-  }), _c('singleImageItem', {
-    staticClass: ["singleImageItemRight"],
+  }, [_c('doubleImageItem', {
     attrs: {
-      "model": _vm.firstLists[1]
+      "model": _vm.secondLists[0]
     }
-  })], 1)
+  }), _c('doubleImageItem', {
+    attrs: {
+      "model": _vm.secondLists[0]
+    }
+  })], 1), _c('cell', {
+    staticClass: ["content"],
+    appendAsTree: true,
+    attrs: {
+      "append": "tree"
+    }
+  }, [_c('doubleImageItem', {
+    attrs: {
+      "model": _vm.secondLists[1]
+    }
+  }), _c('doubleImageItem', {
+    attrs: {
+      "model": _vm.secondLists[0]
+    }
+  })], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _singleImageContent = __webpack_require__(12);
+var _doubleImageContent = __webpack_require__(8);
 
-var _singleImageContent2 = _interopRequireDefault(_singleImageContent);
+var _doubleImageContent2 = _interopRequireDefault(_doubleImageContent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_singleImageContent2.default.el = '#root';
-new Vue(_singleImageContent2.default);
+_doubleImageContent2.default.el = '#root';
+new Vue(_doubleImageContent2.default);
 
 /***/ })
 /******/ ]);

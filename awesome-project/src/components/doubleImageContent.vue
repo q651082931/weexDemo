@@ -1,11 +1,16 @@
 <template>
-    <div class="content" style="justify-content:space-around;flexDirection:row" >
- 
-    </div>
+    <list class="list">
+      <cell> 
+      <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
+      </cell>
+      <cell> 
+      <doubleImageItem :model = "secondLists[1]"></doubleImageItem>
+      </cell>
+    </list>
 </template>
 
 <style scoped>
-.content{
+.list{
   background-color:blueviolet;
 }
  
@@ -13,10 +18,10 @@
 
 <script>
 
-import singleImageItem from './singleImageItem.vue'
+import doubleImageItem from './doubleImageItem.vue'
 export default {
   components:{
-    singleImageItem
+    doubleImageItem
 
   },
   props :['secondLists'],

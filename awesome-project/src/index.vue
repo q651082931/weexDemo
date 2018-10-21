@@ -1,7 +1,9 @@
 <template>
 <div>
+  <div class="titleContent">
 <text class="title">{{mainTitle}}</text>
 <div class="titleBottomLine"></div>
+  </div>
 <singleImageContent :firstLists = "firstLists" class="singleImageContent"></singleImageContent>
 <doubleImageContent :secondLists = 'secondLists' class="doubleImageContent"></doubleImageContent>
 </div>
@@ -9,7 +11,9 @@
 
 
 <style scoped>
-  
+/* .titleContent{
+  background-color: blue;
+  } */
  .title{
    font-size: 40px;
    color: black;
@@ -22,7 +26,10 @@
   height: 2px;
   margin-top: 1px;
   width: 200px;
+  margin-left: 0px;
+  margin-right: 0px;
   align-self: center;
+  flex-grow: 1;
  }
  .singleImageContent{
    margin-top: 60px;

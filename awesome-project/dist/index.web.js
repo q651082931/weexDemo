@@ -19826,7 +19826,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-23cab786] {\n  flex-grow: 1;\n  flex: 1;\n flex-flow: column;\n background-color: aqua;\n}\n.images[data-v-23cab786]{\n    flex-grow: 1;\n   flex: 1;\n flex-flow: row;\n}\n.title[data-v-23cab786]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: left;\n   align-self: left;\n}\n.subTitle[data-v-23cab786]{\n    font-size: 0.37333rem;\n    color:gray;\n    text-align: left;\n}\n.image[data-v-23cab786]{\n   flex-grow: 1;\n   flex: 1;\n   margin-left: 0px;\n   margin-right: 0px;\n   margin-top: 0.26667rem;\n   margin-bottom: 0px;\n   align-self: left;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-23cab786] {\n  flex-grow: 1;\n  flex: 1;\n  flex-flow: column;\n background-color: aqua;\n}\n.images[data-v-23cab786]{\n  flex-grow: 1;\n  flex: 1;\n  flex-flow: row;\n}\n.title[data-v-23cab786]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: left;\n   align-self: left;\n}\n.subTitle[data-v-23cab786]{\n    font-size: 0.37333rem;\n    color:gray;\n    text-align: left;\n}\n.image[data-v-23cab786]{\n   flex-grow: 1;\n   flex: 1;\n   margin-left: 0px;\n   margin-right: 0px;\n   margin-top: 0.26667rem;\n   margin-bottom: 0px;\n   align-self: left;\n}\n", ""]);
 
 // exports
 
@@ -20566,7 +20566,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.title[data-v-a10e8d2e]{\n  font-size: 0.53333rem;\n  color: black;\n  text-align: center;\n  margin-top: 0.53333rem;\n}\n.titleBottomLine[data-v-a10e8d2e]{\n\n background-color: black;\n height: 0.02667rem;\n margin-top: 1px;\n width: 2.66667rem;\n align-self: center;\n}\n.singleImageContent[data-v-a10e8d2e]{\n  margin-top: 0.8rem;\n  margin-left:0.13333rem;\n  margin-right:0.13333rem;\n  height: 4rem;\n}\n.doubleImageContent[data-v-a10e8d2e]{\n  margin-top: 0.53333rem;\n  margin-left: 0.13333rem;\n  margin-right: 0.13333rem;\n  height: 8rem;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n/* .titleContent{\n  background-color: blue;\n  } */\n.title[data-v-a10e8d2e]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: center;\n   margin-top: 0.53333rem;\n}\n.titleBottomLine[data-v-a10e8d2e]{\n\n  background-color: black;\n  height: 0.02667rem;\n  margin-top: 1px;\n  width: 2.66667rem;\n  margin-left: 0px;\n  margin-right: 0px;\n  align-self: center;\n  flex-grow: 1;\n}\n.singleImageContent[data-v-a10e8d2e]{\n   margin-top: 0.8rem;\n   margin-left:0.13333rem;\n   margin-right:0.13333rem;\n   height: 4rem;\n}\n.doubleImageContent[data-v-a10e8d2e]{\n   margin-top: 0.53333rem;\n   margin-left: 0.13333rem;\n   margin-right: 0.13333rem;\n   height: 8rem;\n}\n", ""]);
 
 // exports
 
@@ -20592,6 +20592,13 @@ var _doubleImageContent2 = _interopRequireDefault(_doubleImageContent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -20683,6 +20690,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "weex-type": "div"
     }
+  }, [_c('div', {
+    staticClass: "titleContent weex-ct weex-div",
+    attrs: {
+      "weex-type": "div"
+    }
   }, [_c('p', {
     staticClass: "title weex-el weex-text",
     attrs: {
@@ -20693,7 +20705,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "weex-type": "div"
     }
-  }), _vm._v(" "), _c('singleImageContent', {
+  })]), _vm._v(" "), _c('singleImageContent', {
     staticClass: "singleImageContent",
     attrs: {
       "firstLists": _vm.firstLists

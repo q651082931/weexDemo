@@ -751,7 +751,10 @@ module.exports = {
     "height": "2",
     "marginTop": "1",
     "width": "200",
-    "alignSelf": "center"
+    "marginLeft": "0",
+    "marginRight": "0",
+    "alignSelf": "center",
+    "flexGrow": 1
   },
   "singleImageContent": {
     "marginTop": "60",
@@ -788,6 +791,13 @@ var _doubleImageContent2 = _interopRequireDefault(_doubleImageContent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -874,11 +884,13 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('text', {
+  return _c('div', [_c('div', {
+    staticClass: ["titleContent"]
+  }, [_c('text', {
     staticClass: ["title"]
   }, [_vm._v(_vm._s(_vm.mainTitle))]), _c('div', {
     staticClass: ["titleBottomLine"]
-  }), _c('singleImageContent', {
+  })]), _c('singleImageContent', {
     staticClass: ["singleImageContent"],
     attrs: {
       "firstLists": _vm.firstLists

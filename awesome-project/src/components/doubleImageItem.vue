@@ -12,14 +12,14 @@
 <style scoped>
 .content {
   flex-grow: 1;
-   flex: 1;
- flex-flow: column;
+  flex: 1;
+  flex-flow: column;
  background-color: aqua;
 }
 .images{
-    flex-grow: 1;
-   flex: 1;
- flex-flow: row;
+  flex-grow: 1;
+  flex: 1;
+  flex-flow: row;
 }
 .title{
    font-size: 40px;

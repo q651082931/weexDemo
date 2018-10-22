@@ -157,7 +157,9 @@ module.exports = {
     "marginRight": "0",
     "marginTop": "20",
     "marginBottom": "0",
-    "alignSelf": "left"
+    "alignSelf": "left",
+    "width": "355",
+    "height": "200"
   }
 }
 
@@ -210,9 +212,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
 exports.default = {
   props: ['model']
+  // let deviceHeight = WXEnvironment.deviceHeight
+
 };
 
 /***/ }),

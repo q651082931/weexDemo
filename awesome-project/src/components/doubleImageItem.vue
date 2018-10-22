@@ -37,11 +37,15 @@
    margin-top: 20px;
    margin-bottom: 0px;
    align-self: left;
+   width:  375px ;
+   height: 200px;
 
 }
 </style>
 <script>
 export default {
   props: ['model']
+
 }
+
 </script>

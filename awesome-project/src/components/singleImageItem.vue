@@ -33,11 +33,14 @@
    margin-top: 20px;
    margin-bottom: 0px;
    align-self: left;
-
+   width:  355px ;
+   height: 200px;
 }
 </style>
 <script>
 export default {
   props: ['model']
+
 }
+// let deviceHeight = WXEnvironment.deviceHeight
 </script>

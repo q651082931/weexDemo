@@ -142,7 +142,9 @@ module.exports = {
     "marginRight": "0",
     "marginTop": "20",
     "marginBottom": "0",
-    "alignSelf": "left"
+    "alignSelf": "left",
+    "width": "375",
+    "height": "200"
   }
 }
 
@@ -216,9 +218,12 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
   props: ['model']
+
 };
 
 /***/ }),

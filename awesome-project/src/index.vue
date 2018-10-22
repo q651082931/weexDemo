@@ -62,7 +62,7 @@ export default {
       firstLists: [{
         title: '就造专属感',
         subTitle: '犹记得儿时',
-        picture: 'https://gw.alicdn.com/tfscom/i3/48292642/TB29OtIakz_F1JjSZFkXXcCaXXa_!!48292642.jpg_250x250q90s200.jpg'
+        picture: 'http://bfs.biyao.com/group1/M00/1A/10/rBACW1mRPxiAdWwUAAC_xY0lIFY914.jpg'
       }, {
         title: '睡袍穿不对！',
         subTitle: '我讨厌我的睡袍',

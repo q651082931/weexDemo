@@ -92,7 +92,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-419feddd"
@@ -115,24 +115,21 @@ module.exports = __vue_exports__
 
 module.exports = {
   "content": {
-    "flexGrow": 1,
     "flex": 1,
-    "flexFlow": "column",
-    "backgroundColor": "#00FFFF"
+    "flexFlow": "column"
   },
   "images": {
     "flexGrow": 1,
-    "flex": 1,
     "flexFlow": "row"
   },
   "title": {
-    "fontSize": "40",
+    "fontSize": "28",
     "color": "#000000",
     "textAlign": "left",
     "alignSelf": "left"
   },
   "subTitle": {
-    "fontSize": "28",
+    "fontSize": "18",
     "color": "#808080",
     "textAlign": "left"
   },
@@ -199,9 +196,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
 
 exports.default = {
   props: ['model']
@@ -218,22 +212,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["title"]
   }, [_vm._v(_vm._s(_vm.model.title))]), _c('text', {
     staticClass: ["subTitle"]
-  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _vm._m(0)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _c('div', {
     staticClass: ["images"]
-  }, [_c('image', {
-    staticClass: ["image"],
-    attrs: {
-      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg"
-    }
-  }), _c('image', {
-    staticClass: ["image"],
-    attrs: {
-      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg"
-    }
-  })])
-}]}
+  }, _vm._l((_vm.model.pictures), function(source, i) {
+    return _c('image', {
+      key: i,
+      staticClass: ["image"],
+      attrs: {
+        "src": source
+      }
+    })
+  }))])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
@@ -263,7 +253,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/singleImageItem.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/singleImageItem.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3336c274"
@@ -287,11 +277,10 @@ module.exports = __vue_exports__
 module.exports = {
   "content": {
     "flexFlow": "column",
-    "backgroundColor": "#00FFFF",
     "flex": 1
   },
   "title": {
-    "fontSize": "40",
+    "fontSize": "28",
     "color": "#000000",
     "textAlign": "left",
     "alignSelf": "left",
@@ -300,7 +289,7 @@ module.exports = {
     "overflow": "hidden"
   },
   "subTitle": {
-    "fontSize": "28",
+    "fontSize": "18",
     "color": "#808080",
     "textAlign": "left"
   },
@@ -324,7 +313,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-//
 //
 //
 //
@@ -415,7 +403,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-26de68c2"
@@ -438,7 +426,6 @@ module.exports = __vue_exports__
 
 module.exports = {
   "list": {
-    "backgroundColor": "#8A2BE2",
     "height": "600"
   },
   "content": {
@@ -470,7 +457,6 @@ exports.default = {
 
   },
   props: ['secondLists']
-
 }; //
 //
 //
@@ -563,7 +549,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/singleImageContent.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/singleImageContent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-31b80616"
@@ -585,9 +571,6 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
-  "content": {
-    "backgroundColor": "#FFE4C4"
-  },
   "singleImageItemLeft": {
     "marginRight": "20",
     "flexGrow": 1
@@ -620,7 +603,6 @@ exports.default = {
 
   },
   props: ['firstLists']
-
 }; //
 //
 //
@@ -718,7 +700,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/index.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-2964abc9"
@@ -840,6 +822,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 
 exports.default = {
   components: {
@@ -848,7 +831,7 @@ exports.default = {
   },
   data: function data() {
     return {
-      mainTitle: "回头客推荐",
+      mainTitle: '回头客推荐',
       firstLists: [{
         title: '就造专属感',
         subTitle: '犹记得儿时',
@@ -861,19 +844,19 @@ exports.default = {
       secondLists: [{
         title: '就造专属感',
         subTitle: '犹记得儿',
-        pictures: ['https://gw.alicdn.com/tfscom/i3/48292642/TB29OtIakz_F1JjSZFkXXcCaXXa_!!48292642.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i3/706778912/TB2wX.fcxz9F1JjSZFsXXaCGVXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg']
+        pictures: ['https://gw.alicdn.com/tfscom/i3/48292642/TB29OtIakz_F1JjSZFkXXcCaXXa_!!48292642.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg']
       }, {
         title: '睡袍穿不对媚！',
         subTitle: '“Ihatemynightgown',
-        pictures: ['https://gw.alicdn.com/imgextra/i3/3044653839/TB2a_nAXgsSMeJjSspdXXXZ4pXa_!!3044653839-0-daren.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i1/3044653839/TB2qrPCXiERMeJjSspiXXbZLFXa_!!3044653839-0-daren.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i1/3044653839/TB2ySjuXgsSMeJjSspeXXa77VXa_!!3044653839-0-beehive-scenes.jpg_250x250q90s200.jpg']
+        pictures: ['https://gw.alicdn.com/imgextra/i3/3044653839/TB2a_nAXgsSMeJjSspdXXXZ4pXa_!!3044653839-0-daren.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i1/3044653839/TB2qrPCXiERMeJjSspiXXbZLFXa_!!3044653839-0-daren.jpg_250x250q90s200.jpg']
       }, {
         title: '上天入海',
         subTitle: '现如今相机',
-        pictures: ['https://gw.alicdn.com/tfscom/i3/462856946/TB2VzQswB4lpuFjy1zjXXcAKpXa_!!462856946.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/tfscom/i2/2811920170/TB2rCqHpVXXXXcZXpXXXXXXXXXX_!!2811920170.png_250x250.jpg', 'https://gw.alicdn.com/imgextra/i4/836552381/TB2c1q3aZSfF1JjSsplXXbrKFXa_!!836552381-0-beehive-scenes.jpg_250x250q90s200.jpg']
+        pictures: ['https://gw.alicdn.com/tfscom/i3/462856946/TB2VzQswB4lpuFjy1zjXXcAKpXa_!!462856946.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/tfscom/i2/2811920170/TB2rCqHpVXXXXcZXpXXXXXXXXXX_!!2811920170.png_250x250.jpg']
       }, {
         title: '关于培根的那',
         subTitle: '培根一直',
-        pictures: ['https://gw.alicdn.com/imgextra/i2/603964020/TB24zFbarwTMeJjSszfXXXbtFXa_!!603964020-0-daren.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i2/603964020/TB2txtdarsTMeJjy1zcXXXAgXXa_!!603964020-0-daren.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/tfscom/i3/1635378022/TB2plKDbFXXXXaTXpXXXXXXXXXX-1635378022.jpg_250x250q90s200.jpg']
+        pictures: ['https://gw.alicdn.com/imgextra/i2/603964020/TB24zFbarwTMeJjSszfXXXbtFXa_!!603964020-0-daren.jpg_250x250q90s200.jpg', 'https://gw.alicdn.com/imgextra/i2/603964020/TB2txtdarsTMeJjy1zcXXXAgXXa_!!603964020-0-daren.jpg_250x250q90s200.jpg']
       }]
     };
   }
@@ -884,7 +867,9 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
+  return _c('div', {
+    staticClass: ["view"]
+  }, [_c('div', {
     staticClass: ["titleContent"]
   }, [_c('text', {
     staticClass: ["title"]

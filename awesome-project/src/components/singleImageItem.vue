@@ -1,7 +1,7 @@
 <template>
   <div class="content">
   <text class="title">{{model.title}}</text>
-  <text class="subTitle">{{model.subTitle}}</text> 
+  <text class="subTitle">{{model.subTitle}}</text>
   <image class="image" :src = "model.picture"/>
   </div>
 </template>
@@ -9,21 +9,20 @@
 <style scoped>
 .content {
  flex-flow: column;
- background-color: aqua;
+ /* background-color: aqua; */
  flex: 1;
 }
 .title{
-   font-size: 40px;
+   font-size: 28px;
    color: black;
    text-align: left;
    align-self: left;
    white-space: nowrap;
    text-overflow: ellipsis;
    overflow: hidden;
-   
  }
 .subTitle{
-    font-size: 28px;
+    font-size: 18px;
     color:gray;
     text-align: left;
 }
@@ -39,6 +38,6 @@
 </style>
 <script>
 export default {
-  props :['model'],
+  props: ['model']
 }
 </script>

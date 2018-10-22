@@ -110,7 +110,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/singleImageItem.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/singleImageItem.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3336c274"
@@ -135,11 +135,10 @@ module.exports = __vue_exports__
 module.exports = {
   "content": {
     "flexFlow": "column",
-    "backgroundColor": "#00FFFF",
     "flex": 1
   },
   "title": {
-    "fontSize": "40",
+    "fontSize": "28",
     "color": "#000000",
     "textAlign": "left",
     "alignSelf": "left",
@@ -148,7 +147,7 @@ module.exports = {
     "overflow": "hidden"
   },
   "subTitle": {
-    "fontSize": "28",
+    "fontSize": "18",
     "color": "#808080",
     "textAlign": "left"
   },
@@ -173,7 +172,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-//
 //
 //
 //

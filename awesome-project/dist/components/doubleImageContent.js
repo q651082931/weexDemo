@@ -92,7 +92,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-419feddd"
@@ -115,24 +115,21 @@ module.exports = __vue_exports__
 
 module.exports = {
   "content": {
-    "flexGrow": 1,
     "flex": 1,
-    "flexFlow": "column",
-    "backgroundColor": "#00FFFF"
+    "flexFlow": "column"
   },
   "images": {
     "flexGrow": 1,
-    "flex": 1,
     "flexFlow": "row"
   },
   "title": {
-    "fontSize": "40",
+    "fontSize": "28",
     "color": "#000000",
     "textAlign": "left",
     "alignSelf": "left"
   },
   "subTitle": {
-    "fontSize": "28",
+    "fontSize": "18",
     "color": "#808080",
     "textAlign": "left"
   },
@@ -199,9 +196,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
 
 exports.default = {
   props: ['model']
@@ -218,22 +212,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["title"]
   }, [_vm._v(_vm._s(_vm.model.title))]), _c('text', {
     staticClass: ["subTitle"]
-  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _vm._m(0)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _c('div', {
     staticClass: ["images"]
-  }, [_c('image', {
-    staticClass: ["image"],
-    attrs: {
-      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg"
-    }
-  }), _c('image', {
-    staticClass: ["image"],
-    attrs: {
-      "src": "https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg"
-    }
-  })])
-}]}
+  }, _vm._l((_vm.model.pictures), function(source, i) {
+    return _c('image', {
+      key: i,
+      staticClass: ["image"],
+      attrs: {
+        "src": source
+      }
+    })
+  }))])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
@@ -267,7 +257,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-26de68c2"
@@ -290,7 +280,6 @@ module.exports = __vue_exports__
 
 module.exports = {
   "list": {
-    "backgroundColor": "#8A2BE2",
     "height": "600"
   },
   "content": {
@@ -322,7 +311,6 @@ exports.default = {
 
   },
   props: ['secondLists']
-
 }; //
 //
 //

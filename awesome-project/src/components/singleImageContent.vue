@@ -6,9 +6,9 @@
 </template>
 
 <style scoped>
-.content{
+/* .content{
   background-color: bisque;
-}
+} */
 .singleImageItemLeft{
 
   margin-right: 20px;
@@ -23,14 +23,10 @@
 
 import singleImageItem from './singleImageItem.vue'
 export default {
-  components:{
+  components: {
     singleImageItem
 
   },
-  props :['firstLists'],
-
-  
+  props: ['firstLists']
 }
-
 </script>
-

@@ -1,10 +1,10 @@
 <template>
     <list class="list">
-      <cell  class="content"> 
+      <cell  class="content">
       <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
       <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
       </cell>
-      <cell class="content"> 
+      <cell class="content">
       <doubleImageItem :model = "secondLists[1]"></doubleImageItem>
       <doubleImageItem :model = "secondLists[0]"></doubleImageItem>
       </cell>
@@ -13,7 +13,7 @@
 
 <style scoped>
 .list{
-  background-color:blueviolet;
+  /* background-color:blueviolet; */
   height: 600px;
 }
 .content{
@@ -27,14 +27,11 @@
 
 import doubleImageItem from './doubleImageItem.vue'
 export default {
-  components:{
+  components: {
     doubleImageItem
 
   },
-  props :['secondLists'],
-
-  
+  props: ['secondLists']
 }
 
 </script>
-

@@ -19768,7 +19768,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
+Component.options.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/doubleImageItem.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] doubleImageItem.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -19826,7 +19826,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-23cab786] {\n  flex-grow: 1;\n  flex: 1;\n  flex-flow: column;\n background-color: aqua;\n}\n.images[data-v-23cab786]{\n  flex-grow: 1;\n  flex: 1;\n  flex-flow: row;\n}\n.title[data-v-23cab786]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: left;\n   align-self: left;\n}\n.subTitle[data-v-23cab786]{\n    font-size: 0.37333rem;\n    color:gray;\n    text-align: left;\n}\n.image[data-v-23cab786]{\n   flex-grow: 1;\n   flex: 1;\n   margin-left: 0px;\n   margin-right: 0px;\n   margin-top: 0.26667rem;\n   margin-bottom: 0px;\n   align-self: left;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-23cab786] {\n  flex: 1;\n  flex-flow: column;\n /* background-color: aqua; */\n}\n.images[data-v-23cab786]{\n  flex-grow: 1;\n  flex: 1;\n  flex-flow: row;\n}\n.title[data-v-23cab786]{\n   font-size: 0.53333rem;\n   color: black;\n   text-align: left;\n   align-self: left;\n}\n.subTitle[data-v-23cab786]{\n    font-size: 0.37333rem;\n    color:gray;\n    text-align: left;\n}\n.image[data-v-23cab786]{\n   flex-grow: 1;\n   flex: 1;\n   margin-left: 0px;\n   margin-right: 0px;\n   margin-top: 0.26667rem;\n   margin-bottom: 0px;\n   align-self: left;\n}\n", ""]);
 
 // exports
 
@@ -19841,7 +19841,6 @@ exports.push([module.i, "\n.content[data-v-23cab786] {\n  flex-grow: 1;\n  flex:
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-//
 //
 //
 //
@@ -19966,7 +19965,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/liang/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
+Component.options.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/doubleImageContent.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] doubleImageContent.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20024,7 +20023,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.list[data-v-ee840d82]{\n  background-color:blueviolet;\n  height: 8rem;\n}\n.content[data-v-ee840d82]{\n  flex-direction: row;\n  height: 4rem;\n}\n\n", ""]);
+exports.push([module.i, "\n.list[data-v-ee840d82]{\n  /* background-color:blueviolet; */\n  height: 8rem;\n}\n.content[data-v-ee840d82]{\n  flex-direction: row;\n  height: 4rem;\n}\n\n", ""]);
 
 // exports
 
@@ -20052,7 +20051,6 @@ exports.default = {
 
   },
   props: ['secondLists']
-
 }; //
 //
 //

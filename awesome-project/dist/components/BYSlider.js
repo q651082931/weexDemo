@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -114,9 +114,16 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "sliderFrame": {
+    "width": "750",
+    "height": "600",
+    "flexGrow": 1,
+    "backgroundColor": "#FFE4C4"
+  },
   "image": {
     "width": "750",
     "height": "600",
+    "flexGrow": 1,
     "backgroundColor": "#0000FF"
   }
 }
@@ -146,9 +153,16 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-  props: ['imgList']
+  props: ['dataJson']
 
 };
 
@@ -171,7 +185,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: ["image"],
       attrs: {
         "resize": "cover",
-        "scr": img
+        "src": img
       }
     })])
   }))
@@ -179,7 +193,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 4 */
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

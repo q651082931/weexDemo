@@ -62,19 +62,29 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 10:
+/******/ ([
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
+/* styles */
+__vue_styles__.push(__webpack_require__(5)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(6)
+
 /* template */
-var __vue_template__ = __webpack_require__(11)
+var __vue_template__ = __webpack_require__(7)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -86,9 +96,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/HelloWorld.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/price.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-0ec09e2e"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -103,34 +114,136 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-
-/***/ 11:
+/* 5 */
 /***/ (function(module, exports) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('text', {
-    staticClass: ["message"]
-  }, [_vm._v("Now, let's use Vue.js to build your Weex app.")])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+module.exports = {
+  "title": {
+    "fontSize": "38",
+    "color": "#000000",
+    "textAlign": "left",
+    "alignSelf": "left",
+    "whiteSpace": "nowrap",
+    "textOverflow": "ellipsis",
+    "overflow": "hidden",
+    "marginLeft": "20"
+  },
+  "subTitle": {
+    "fontSize": "18",
+    "color": "#808080",
+    "textAlign": "left",
+    "marginLeft": "20",
+    "marginTop": "20"
+  },
+  "price": {
+    "fontSize": "50",
+    "color": "#FF0000",
+    "textAlign": "left",
+    "marginLeft": "20",
+    "marginTop": "10"
+  },
+  "bottomTitle": {
+    "fontSize": "18",
+    "color": "#FFA500",
+    "marginLeft": "20",
+    "marginTop": "10"
+  }
+}
 
 /***/ }),
-
-/***/ 9:
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _HelloWorld = __webpack_require__(10);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
+exports.default = {
+  //   scope: ['model']
+};
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("彩棉婴儿 ")]), _c('text', {
+    staticClass: ["subTitle"]
+  }, [_vm._v("天然彩棉")]), _c('text', {
+    staticClass: ["price"]
+  }, [_vm._v("79")]), _c('text', {
+    staticClass: ["bottomTitle"]
+  }, [_vm._v("joules制造商直供")])])
+}]}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _price = __webpack_require__(4);
+
+var _price2 = _interopRequireDefault(_price);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_HelloWorld2.default.el = '#root';
-new Vue(_HelloWorld2.default);
+_price2.default.el = '#root';
+new Vue(_price2.default);
 
 /***/ })
-
-/******/ });
+/******/ ]);

@@ -203,7 +203,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
-  //   scope: ['model']
+  props: ['dataJson']
 };
 
 /***/ }),
@@ -211,18 +211,16 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("彩棉婴儿 ")]), _c('text', {
+  }, [_vm._v(_vm._s(_vm.dataJson.goodsName) + " ")]), _c('text', {
     staticClass: ["subTitle"]
-  }, [_vm._v("天然彩棉")]), _c('text', {
+  }, [_vm._v(_vm._s(_vm.dataJson.shortGoodsName))]), _c('text', {
     staticClass: ["price"]
   }, [_vm._v("79")]), _c('text', {
     staticClass: ["bottomTitle"]
   }, [_vm._v("joules制造商直供")])])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),

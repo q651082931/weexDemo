@@ -326,7 +326,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
-  //   scope: ['model']
+  props: ['dataJson']
 };
 
 /***/ }),
@@ -334,18 +334,16 @@ exports.default = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("彩棉婴儿 ")]), _c('text', {
+  }, [_vm._v(_vm._s(_vm.dataJson.goodsName) + " ")]), _c('text', {
     staticClass: ["subTitle"]
-  }, [_vm._v("天然彩棉")]), _c('text', {
+  }, [_vm._v(_vm._s(_vm.dataJson.shortGoodsName))]), _c('text', {
     staticClass: ["price"]
   }, [_vm._v("79")]), _c('text', {
     staticClass: ["bottomTitle"]
   }, [_vm._v("joules制造商直供")])])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
@@ -423,8 +421,8 @@ module.exports = {
     "height": "667"
   },
   "BYSlider": {
+    "flexGrow": 1,
     "height": "600",
-    "width": "750",
     "backgroundColor": "#00FFFF"
   }
 }
@@ -448,8 +446,13 @@ var _price = __webpack_require__(4);
 
 var _price2 = _interopRequireDefault(_price);
 
+var _valuational = __webpack_require__(19);
+
+var _valuational2 = _interopRequireDefault(_valuational);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var dataJsonFile = __webpack_require__(17); //
 //
 //
 //
@@ -474,12 +477,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 
-var dataJsonFile = __webpack_require__(17);
-console.log(dataJsonFile);
+console.log(dataJsonFile.mdata);
 exports.default = {
   components: {
     BYSlider: _BYSlider2.default,
-    price: _price2.default
+    price: _price2.default,
+    valuational: _valuational2.default
   },
   data: function data() {
     return {
@@ -518,9 +521,221 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "dataJson": _vm.dataJson
     }
   }), _c('price', {
-    staticClass: ["price"]
+    staticClass: ["price"],
+    attrs: {
+      "dataJson": _vm.dataJson
+    }
+  }), _c('valuational', {
+    attrs: {
+      "dataJson": _vm.dataJson
+    }
   })], 1)])
 },staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(20)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(21)
+
+/* template */
+var __vue_template__ = __webpack_require__(22)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/valuational.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-a2feb3e8"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "header": {
+    "flexGrow": 1,
+    "backgroundColor": "#F0F8FF",
+    "height": "50"
+  },
+  "common": {
+    "alignSelf": "center"
+  },
+  "title": {
+    "fontSize": "38",
+    "color": "#000000",
+    "textAlign": "left",
+    "alignSelf": "left",
+    "whiteSpace": "nowrap",
+    "textOverflow": "ellipsis",
+    "overflow": "hidden",
+    "marginLeft": "20"
+  },
+  "content": {
+    "flexDirection": "row"
+  },
+  "icon": {
+    "marginTop": "20",
+    "width": "60",
+    "height": "60"
+  },
+  "subTitle": {
+    "fontSize": "18",
+    "color": "#808080",
+    "textAlign": "left",
+    "marginLeft": "20",
+    "marginTop": "20",
+    "marginRight": "20",
+    "flexGrow": 1
+  },
+  "price": {
+    "fontSize": "50",
+    "color": "#FF0000",
+    "textAlign": "left",
+    "marginLeft": "20",
+    "marginTop": "10"
+  },
+  "bottomTitle": {
+    "fontSize": "18",
+    "color": "#FFA500",
+    "marginLeft": "20",
+    "marginTop": "10"
+  }
+}
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  props: ['dataJson']
+};
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._m(0), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("商品评价 (" + _vm._s(_vm.dataJson.onSellGoodsInfo.onsellCount) + ") ")]), _c('div', {
+    staticClass: ["content"]
+  }, [_c('image', {
+    staticClass: ["icon"],
+    attrs: {
+      "src": _vm.dataJson.onSellGoodsInfo.recommendProducts[0].imageUrl
+    }
+  }), _c('text', {
+    staticClass: ["subTitle"]
+  }, [_vm._v(_vm._s(_vm.dataJson.onSellGoodsInfo.recommendProducts[0].salePoint))]), _vm._v(" -->\n  ")])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["header"]
+  }, [_c('text', {
+    staticClass: ["common"]
+  }, [_vm._v("评价")])])
+}]}
 module.exports.render._withStripped = true
 
 /***/ })

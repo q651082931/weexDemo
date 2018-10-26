@@ -1,7 +1,7 @@
 <template>
     <div>
-      <text class="title">彩棉婴儿 </text>
-      <text class="subTitle">天然彩棉</text>
+      <text class="title">{{dataJson.goodsName}} </text>
+      <text class="subTitle">{{dataJson.shortGoodsName}}</text>
       <text class="price">79</text>
       <text class="bottomTitle">joules制造商直供</text>
     </div>
@@ -41,6 +41,6 @@
 </style>
 <script>
 export default {
-//   scope: ['model']
+  props: ['dataJson']
 }
 </script>

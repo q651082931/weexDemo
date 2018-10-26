@@ -1,103 +1,44 @@
 <template>
-<div class="view">
-  <div class="titleContent">
-<text class="title">{{mainTitle}}</text>
-<div class="titleBottomLine"></div>
-  </div>
-<singleImageContent :firstLists = "firstLists" class="singleImageContent"></singleImageContent>
-<doubleImageContent :secondLists = 'secondLists' class="doubleImageContent"></doubleImageContent>
+<div class="wrapper">
+<scroller class="scroller">
+<!-- <BYSlider class="BYSlider" :imgList = "dataJson.imgList"> -->
+<price class="price"></price>
+ </BYSlider>
+</scroller>
 </div>
 </template>
 <style scoped>
 
-/* .view{
-  width: 100%;
-} */
-/* .titleContent{
-  background-color: blue;
-  } */
- .title{
-   font-size: 40px;
-   color: black;
-   text-align: center;
-   margin-top: 40px;
- }
- .titleBottomLine{
+.scroller{
+ flex : 1;
+ height: 667px;
+ /* background-color: red; */
+}
+.BYSlider{
+  /* flex-grow: 1; */
+  height: 600px;
+  width: 750px;
+  background-color: aqua;
 
-  background-color: black;
-  height: 2px;
-  margin-top: 1px;
-  width: 200px;
-  margin-left: 0px;
-  margin-right: 0px;
-  align-self: center;
-  flex-grow: 1;
- }
- .singleImageContent{
-   margin-top: 60px;
-   margin-left:10px;
-   margin-right:10px;
-   height: 300px;
- }
- .doubleImageContent{
-   margin-top: 40px;
-   margin-left: 10px;
-   margin-right: 10px;
-   height: 600px;
-
- }
+}
 </style>
 
 <script>
-import singleImageContent from './components/singleImageContent.vue'
-import doubleImageContent from './components/doubleImageContent.vue'
+import BYSlider from './components/BYSlider.vue'
+import price from './components/price.vue'
+
+let dataJsonFile = require('./components/product-detail.json')
 export default {
   components: {
-    singleImageContent,
-    doubleImageContent
+    BYSlider,
+    price
+
   },
   data () {
     return {
-      mainTitle: '回头客推荐',
-      firstLists: [{
-        title: '就造专属感',
-        subTitle: '犹记得儿时',
-        picture: 'http://bfs.biyao.com/group1/M00/1A/10/rBACW1mRPxiAdWwUAAC_xY0lIFY914.jpg'
-      }, {
-        title: '睡袍穿不对！',
-        subTitle: '我讨厌我的睡袍',
-        picture: 'https://gw.alicdn.com/imgextra/i1/3044653839/TB2ySjuXgsSMeJjSspeXXa77VXa_!!3044653839-0-beehive-scenes.jpg_250x250q90s200.jpg'
-      }],
-      secondLists: [{
-        title: '就造专属感',
-        subTitle: '犹记得儿',
-        pictures: [
-          'https://gw.alicdn.com/tfscom/i3/48292642/TB29OtIakz_F1JjSZFkXXcCaXXa_!!48292642.jpg_250x250q90s200.jpg',
-          'https://gw.alicdn.com/imgextra/i4/706778912/TB2hvwSXBvBIuJjy1zeXXbGBpXa_!!706778912-0-beehive-scenes.jpg_250x250q90s200.jpg'
-        ]
-      }, {
-        title: '睡袍穿不对媚！',
-        subTitle: '“Ihatemynightgown',
-        pictures: [
-          'https://gw.alicdn.com/imgextra/i3/3044653839/TB2a_nAXgsSMeJjSspdXXXZ4pXa_!!3044653839-0-daren.jpg_250x250q90s200.jpg',
-          'https://gw.alicdn.com/imgextra/i1/3044653839/TB2qrPCXiERMeJjSspiXXbZLFXa_!!3044653839-0-daren.jpg_250x250q90s200.jpg'
-        ]
-      }, {
-        title: '上天入海',
-        subTitle: '现如今相机',
-        pictures: [
-          'https://gw.alicdn.com/tfscom/i3/462856946/TB2VzQswB4lpuFjy1zjXXcAKpXa_!!462856946.jpg_250x250q90s200.jpg',
-          'https://gw.alicdn.com/tfscom/i2/2811920170/TB2rCqHpVXXXXcZXpXXXXXXXXXX_!!2811920170.png_250x250.jpg'
-        ]
-      }, {
-        title: '关于培根的那',
-        subTitle: '培根一直',
-        pictures: [
-          'https://gw.alicdn.com/imgextra/i2/603964020/TB24zFbarwTMeJjSszfXXXbtFXa_!!603964020-0-daren.jpg_250x250q90s200.jpg',
-          'https://gw.alicdn.com/imgextra/i2/603964020/TB2txtdarsTMeJjy1zcXXXAgXXa_!!603964020-0-daren.jpg_250x250q90s200.jpg'
-        ]
-      }]
+      dataJson: dataJsonFile.mdata
     }
   }
+
 }
 </script>

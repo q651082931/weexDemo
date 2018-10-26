@@ -62,43 +62,25 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 22);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 22:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _singleImageItem = __webpack_require__(4);
-
-var _singleImageItem2 = _interopRequireDefault(_singleImageItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_singleImageItem2.default.el = '#root';
-new Vue(_singleImageItem2.default);
-
-/***/ }),
-
-/***/ 4:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(1)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(2)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +92,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/singleImageItem.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/BYSlider.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-3336c274"
+__vue_options__._scopeId = "data-v-d3d6dfb0"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -128,44 +110,19 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-
-/***/ 5:
+/* 1 */
 /***/ (function(module, exports) {
 
 module.exports = {
-  "content": {
-    "flexFlow": "column",
-    "flex": 1
-  },
-  "title": {
-    "fontSize": "28",
-    "color": "#000000",
-    "textAlign": "left",
-    "alignSelf": "left",
-    "whiteSpace": "nowrap",
-    "textOverflow": "ellipsis",
-    "overflow": "hidden"
-  },
-  "subTitle": {
-    "fontSize": "18",
-    "color": "#808080",
-    "textAlign": "left"
-  },
   "image": {
-    "flexGrow": 1,
-    "marginLeft": "0",
-    "marginRight": "0",
-    "marginTop": "20",
-    "marginBottom": "0",
-    "alignSelf": "left",
-    "width": "355",
-    "height": "200"
+    "width": "750",
+    "height": "600",
+    "backgroundColor": "#0000FF"
   }
 }
 
 /***/ }),
-
-/***/ 6:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -189,58 +146,53 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 exports.default = {
-  props: ['model']
-  // let deviceHeight = WXEnvironment.deviceHeight
+  props: ['imgList']
 
 };
 
 /***/ }),
-
-/***/ 7:
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["content"]
-  }, [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v(_vm._s(_vm.model.title))]), _c('text', {
-    staticClass: ["subTitle"]
-  }, [_vm._v(_vm._s(_vm.model.subTitle))]), _c('image', {
-    staticClass: ["image"],
+  return _c('slider', {
+    staticClass: ["slider"],
     attrs: {
-      "src": _vm.model.picture
+      "interval": "3000",
+      "autoPlay": "true"
     }
-  })])
+  }, _vm._l((_vm.dataJson.imgList), function(img) {
+    return _c('div', {
+      key: img,
+      staticClass: ["sliderFrame"]
+    }, [_c('image', {
+      staticClass: ["image"],
+      attrs: {
+        "resize": "cover",
+        "scr": img
+      }
+    })])
+  }))
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
-/***/ })
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/******/ });
+"use strict";
+
+
+var _BYSlider = __webpack_require__(0);
+
+var _BYSlider2 = _interopRequireDefault(_BYSlider);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_BYSlider2.default.el = '#root';
+new Vue(_BYSlider2.default);
+
+/***/ })
+/******/ ]);

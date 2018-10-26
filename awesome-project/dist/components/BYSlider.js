@@ -115,7 +115,6 @@ module.exports = __vue_exports__
 
 module.exports = {
   "sliderFrame": {
-    "width": "750",
     "height": "600",
     "flexGrow": 1,
     "backgroundColor": "#FFE4C4"

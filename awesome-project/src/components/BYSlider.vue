@@ -8,7 +8,7 @@
 
 <style scoped>
 .sliderFrame {
-    width: 750px;
+    /* width: 750px; */
     height: 600px;
     flex-grow: 1;
     background-color:bisque;

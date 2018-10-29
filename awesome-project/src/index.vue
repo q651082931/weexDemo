@@ -5,6 +5,10 @@
       </BYSlider>
       <price :dataJson = "dataJson" class="price"></price>
       <valuational :dataJson = "dataJson"> </valuational>
+      <!-- 推荐 -->
+      <RecommendView></RecommendView>
+      <!-- webview -->
+      <WebView/>
     </scroller>
   </div>
 </template>
@@ -26,6 +30,8 @@
 import BYSlider from './components/BYSlider.vue'
 import price from './components/price.vue'
 import valuational from './components/valuational.vue'
+import RecommendView from './components/RecommendView.vue'
+import WebView from './components/WebView.vue'
 
 let dataJsonFile = require('./components/product-detail.json')
 console.log(dataJsonFile.mdata)
@@ -33,7 +39,9 @@ export default {
   components: {
     BYSlider,
     price,
-    valuational
+    valuational,
+    RecommendView,
+    WebView
   },
   data () {
     return {

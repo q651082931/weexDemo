@@ -62,43 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 24:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _price = __webpack_require__(4);
-
-var _price2 = _interopRequireDefault(_price);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_price2.default.el = '#root';
-new Vue(_price2.default);
-
-/***/ }),
-
-/***/ 4:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(13)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(14)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(15)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +93,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/price.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/valuational.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-0ec09e2e"
+__vue_options__._scopeId = "data-v-a2feb3e8"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,10 +112,18 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 5:
+/***/ 13:
 /***/ (function(module, exports) {
 
 module.exports = {
+  "header": {
+    "flexGrow": 1,
+    "backgroundColor": "#F0F8FF",
+    "height": "50"
+  },
+  "common": {
+    "alignSelf": "center"
+  },
   "title": {
     "fontSize": "38",
     "color": "#000000",
@@ -143,12 +134,22 @@ module.exports = {
     "overflow": "hidden",
     "marginLeft": "20"
   },
+  "content": {
+    "flexDirection": "row"
+  },
+  "icon": {
+    "marginTop": "20",
+    "width": "60",
+    "height": "60"
+  },
   "subTitle": {
     "fontSize": "18",
     "color": "#808080",
     "textAlign": "left",
     "marginLeft": "20",
-    "marginTop": "20"
+    "marginTop": "20",
+    "marginRight": "20",
+    "flexGrow": 1
   },
   "price": {
     "fontSize": "50",
@@ -167,7 +168,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6:
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -217,6 +218,30 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
   props: ['dataJson']
@@ -224,21 +249,47 @@ exports.default = {
 
 /***/ }),
 
-/***/ 7:
+/***/ 15:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('text', {
+  return _c('div', [_vm._m(0), _c('text', {
     staticClass: ["title"]
-  }, [_vm._v(_vm._s(_vm.dataJson.goodsName) + " ")]), _c('text', {
+  }, [_vm._v("商品评价 (" + _vm._s(_vm.dataJson.onSellGoodsInfo.onsellCount) + ") ")]), _c('div', {
+    staticClass: ["content"]
+  }, [_c('image', {
+    staticClass: ["icon"],
+    attrs: {
+      "src": _vm.dataJson.onSellGoodsInfo.recommendProducts[0].imageUrl
+    }
+  }), _c('text', {
     staticClass: ["subTitle"]
-  }, [_vm._v(_vm._s(_vm.dataJson.shortGoodsName))]), _c('text', {
-    staticClass: ["price"]
-  }, [_vm._v("79")]), _c('text', {
-    staticClass: ["bottomTitle"]
-  }, [_vm._v("joules制造商直供")])])
-},staticRenderFns: []}
+  }, [_vm._v(_vm._s(_vm.dataJson.onSellGoodsInfo.recommendProducts[0].salePoint))]), _vm._v(" -->\n  ")])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["header"]
+  }, [_c('text', {
+    staticClass: ["common"]
+  }, [_vm._v("评价")])])
+}]}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 26:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _valuational = __webpack_require__(12);
+
+var _valuational2 = _interopRequireDefault(_valuational);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_valuational2.default.el = '#root';
+new Vue(_valuational2.default);
 
 /***/ })
 

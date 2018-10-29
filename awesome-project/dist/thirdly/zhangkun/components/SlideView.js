@@ -62,43 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ 	return __webpack_require__(__webpack_require__.s = 54);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 24:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _price = __webpack_require__(4);
-
-var _price2 = _interopRequireDefault(_price);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_price2.default.el = '#root';
-new Vue(_price2.default);
-
-/***/ }),
-
-/***/ 4:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(5)
+__vue_styles__.push(__webpack_require__(1)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(6)
+__vue_exports__ = __webpack_require__(2)
 
 /* template */
-var __vue_template__ = __webpack_require__(7)
+var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -110,10 +93,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/components/price.vue"
+__vue_options__.__file = "/Users/biyao.com/Desktop/weexDemo/awesome-project/src/thirdly/zhangkun/components/SlideView.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-0ec09e2e"
+__vue_options__._scopeId = "data-v-389094d0"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -129,45 +112,35 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 5:
+/***/ 1:
 /***/ (function(module, exports) {
 
 module.exports = {
-  "title": {
-    "fontSize": "38",
-    "color": "#000000",
-    "textAlign": "left",
-    "alignSelf": "left",
-    "whiteSpace": "nowrap",
-    "textOverflow": "ellipsis",
-    "overflow": "hidden",
-    "marginLeft": "20"
+  "wraper": {
+    "alignItems": "flex-start",
+    "justifyContent": "flex-start"
   },
-  "subTitle": {
-    "fontSize": "18",
-    "color": "#808080",
-    "textAlign": "left",
-    "marginLeft": "20",
-    "marginTop": "20"
+  "frame": {
+    "width": "750",
+    "height": "750"
   },
-  "price": {
-    "fontSize": "50",
-    "color": "#FF0000",
-    "textAlign": "left",
-    "marginLeft": "20",
-    "marginTop": "10"
+  "text": {
+    "fontSize": "28",
+    "borderColor": "#a85695",
+    "borderWidth": "1",
+    "color": "#FFFFFF"
   },
-  "bottomTitle": {
-    "fontSize": "18",
-    "color": "#FFA500",
-    "marginLeft": "20",
-    "marginTop": "10"
+  "indicator": {
+    "position": "absolute",
+    "right": "30",
+    "bottom": "20",
+    "itemSelectedColor": "#a85695"
   }
 }
 
 /***/ }),
 
-/***/ 6:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -187,58 +160,73 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 exports.default = {
-  props: ['dataJson']
+  data: function data() {
+    return {
+      imageList: [{
+        src: 'http://bfs.biyao.com/group1/M00/63/31/rBACW1vITcKAX-wiAADKyOSl6cI589.webp'
+      }, {
+        src: 'http://bfs.biyao.com/group1/M00/61/76/rBACVFvITdmAb7UNAABU86zpaZw373.webp'
+      }, {
+        src: 'http://bfs.biyao.com/group1/M00/61/76/rBACVFvITe6ASjEiAADGWDgPXz4054.webp'
+      }, {
+        src: 'http://bfs.biyao.com/group1/M00/63/2A/rBACYVvIThOAD4YjAACADC065_g026.webp'
+      }, {
+        src: 'http://bfs.biyao.com/group1/M00/63/2A/rBACYVvITkqAVu9jAADlrAV9LmQ237.webp'
+      }]
+    };
+  }
 };
 
 /***/ }),
 
-/***/ 7:
+/***/ 3:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('text', {
-    staticClass: ["title"]
-  }, [_vm._v(_vm._s(_vm.dataJson.goodsName) + " ")]), _c('text', {
-    staticClass: ["subTitle"]
-  }, [_vm._v(_vm._s(_vm.dataJson.shortGoodsName))]), _c('text', {
-    staticClass: ["price"]
-  }, [_vm._v("79")]), _c('text', {
-    staticClass: ["bottomTitle"]
-  }, [_vm._v("joules制造商直供")])])
+  return _c('div', {
+    staticClass: ["wraper", "frame"]
+  }, [_c('slider', {
+    staticClass: ["frame"],
+    attrs: {
+      "interval": "3000",
+      "autoPlay": "true"
+    }
+  }, [_vm._l((_vm.imageList), function(img, i) {
+    return _c('div', {
+      key: i,
+      staticClass: ["frame"]
+    }, [_c('image', {
+      staticClass: ["frame"],
+      attrs: {
+        "resize": "strech",
+        "src": _vm.imageList[i].src
+      }
+    })])
+  }), _c('indicator', {
+    staticClass: ["indicator"]
+  })], 2)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ 54:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _SlideView = __webpack_require__(0);
+
+var _SlideView2 = _interopRequireDefault(_SlideView);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_SlideView2.default.el = '#root';
+new Vue(_SlideView2.default);
 
 /***/ })
 

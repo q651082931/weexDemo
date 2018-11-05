@@ -11,6 +11,7 @@
 
 <script>
 import ProductDetail from './components/ProductDetail.vue'
+
 // console.log(dataJsonFile.mdata)
 export default {
   components: {
